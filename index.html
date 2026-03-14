@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-        <!-- Google tag (gtag.js) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Памирская клавиатура для шугнанского, рушани и других памирских языков. Официальная раскладка по алфавиту Карамшоева. Скачать бесплатно для Android.">
+    <meta name="google-site-verification" content="DghZYQJTcCGyGE4zTJ8mQgdUd_Y2Jenas7CbbX-fhqo" />
+    
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJ2CED47T2"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -21,13 +27,7 @@
           });
         }
       });
-    </script>    
-</head>
-<body>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Памирская клавиатура для шугнанского, рушани и других памирских языков. Официальная раскладка по алфавиту Карамшоева. Скачать бесплатно для Android.">
+    </script>
     
     <title>Памирская клавиатура для шугнанского и рушани | Скачать бесплатно | Pamiri Keyboard</title>
     
@@ -100,6 +100,18 @@
             position: relative;
             z-index: 2;
         }
+        .beta-badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #000;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-top: 8px;
+            position: relative;
+            z-index: 2;
+        }
         .download-btn {
             display: inline-block;
             background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
@@ -120,6 +132,23 @@
         .download-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 10px rgba(40, 167, 69, 0.4);
+        }
+        .feedback-btn {
+            background: #6c757d;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            display: inline-block;
+            width: 100%;
+            margin: 15px 0;
+            transition: transform 0.2s, background 0.2s;
+        }
+        .feedback-btn:hover {
+            background: #5a6268;
+            transform: translateY(-2px);
         }
         section {
             background: white;
@@ -148,6 +177,14 @@
             border-radius: 4px;
             margin: 15px 0;
             font-size: 0.9rem;
+        }
+        .beta-notice {
+            background: #e7f3ff;
+            border-left: 4px solid #0d6efd;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+            font-size: 0.95rem;
         }
         
         /* Красивый алфавит на белом фоне */
@@ -228,7 +265,7 @@
             margin-top: 15px;
             font-style: normal;
             font-weight: bold;
- font-size: 1.0rem;
+            font-size: 1.0rem;
             color: #333;
         }
         
@@ -236,7 +273,7 @@
             text-align: center;
             margin-top: 30px;
             color: #777;
-            font-size: .85rem;
+            font-size: 0.85rem;
             padding: 15px;
             background: #f8f9fa;
             border-radius: 10px;
@@ -263,7 +300,7 @@
                 font-size: 0.9rem;
             }
             
-            .download-btn {
+            .download-btn, .feedback-btn {
                 padding: 10px 20px;
                 font-size: 1.0rem;
             }
@@ -294,13 +331,17 @@
                 font-size: 1.1rem;
             }
             
-            .download-btn {
+            .download-btn, .feedback-btn {
                 padding: 9px 15px;
                 font-size: 0.95rem;
             }
+            
+            .beta-badge {
+                padding: 3px 8px;
+                font-size: 0.85rem;
+            }
         }
     </style>
-<meta name="google-site-verification" content="DghZYQJTcCGyGE4zTJ8mQgdUd_Y2Jenas7CbbX-fhqo" />           
 </head>
 <body>
     <header>
@@ -315,12 +356,18 @@
         </div>
         
         <h1>⌨️ Pamiri Keyboard</h1>
-        <div class="subtitle"> Раскладка для памирских языков: шугнанский, рушани, вахан</div>
+        <div class="subtitle">Раскладка для памирских языков: шугнанский, рушани, вахан</div>
+        <div class="beta-badge">🧪 Бета-версия</div>
     </header>
 
     <section>
         <h2>Что это такое?</h2>
-        <p><strong>Pamiri Keyboard</strong> — это клавиатура для устройств Android, созданная специально для письма на памирских языках. Раскладка основана на алфавите, предложенном выдающимся памирологом <strong>Додихудо Карамшоевым</strong> в его трёхтомном шугнанскооваре.</p>
+        <p><strong>Pamiri Keyboard</strong> — это клавиатура для устройств Android, созданная специально для письма на памирских языках. Раскладка основана на алфавите, предложенном выдающимся памирологом <strong>Додихудо Карамшоевым</strong> в его трёхтомном шугнанско-русском словаре.</p>
+        
+        <div class="beta-notice">
+            <strong>ℹ️ Это бета-версия клавиатуры.</strong> Приложение активно разрабатывается и будет улучшаться: добавится автодополнение, исправятся ошибки, появятся новые функции. Ваша обратная связь очень важна для развития проекта!
+        </div>
+        
         <p>Приложение поддерживает языки:</p>
         <ul>
             <li>Шугнанский (шугнанский диалект)</li>
@@ -393,10 +440,10 @@
 
     <section>
         <h2>Скачать приложение</h2>
-          <div class="beta-notice">
+        <div class="beta-notice">
             <strong>⚠️ Бета-версия:</strong> Приложение находится в стадии тестирования. Возможны ошибки. Будем благодарны за обратную связь!
         </div>
-        <a href="pamiri-keyboard.apk" download class="download-btn">⬇️ Скачать APK (9.0 МБ)</a>
+        <a href="pamiri-keyboard.apk" download class="download-btn">⬇️ Скачать бета-версию APK (9.0 МБ)</a>
         <div class="warning">
             <strong>⚠️ Важно:</strong> При первом запуске разрешите установку из «Неизвестных источников» в настройках безопасности Android (Настройки → Безопасность → Неизвестные источники).
         </div>
@@ -412,7 +459,8 @@
             <li>При наборе текста переключитесь на нашу клавиатуру</li>
         </ol>
     </section>
-<section>
+
+    <section>
         <h2>💬 Обратная связь</h2>
         <p>Это бета-версия, и ваша помощь очень важна! Сообщите нам:</p>
         <ul>
@@ -436,6 +484,9 @@
         <span class="quote-author">Михаил Александрович Шолохов</span>
     </section>
 
-
+    <footer>
+        <p>© 2026 Pamiri Keyboard | Бета-версия для жителей ГБАО и любителей памирской культуры</p>
+        <p>Село Баджув, ГБАО, Таджикистан</p>
+    </footer>
 </body>
 </html>
